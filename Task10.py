@@ -11,9 +11,22 @@
 
 def main():
     #Write your code here
-    
-
-
+    students = input('Students: ')
+    all_names = students.split()
+    all_names.sort()
+    final_roll = []
+    bad = []
+    print('Class Roll')
+    for name in all_names:
+        if name.istitle():
+            final_roll.append(name)
+        elif name.isupper() or name.islower():
+            bad.append(name)
+        elif not name.islower() and not name.isupper():
+            mixed = name.title()
+            final_roll.append(mixed)
+    for namez in final_roll:
+        print(namez)
     # End of your code here
 
 

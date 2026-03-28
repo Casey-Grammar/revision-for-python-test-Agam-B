@@ -5,9 +5,17 @@
 
 def main():
     #Write your code here
-    
+
+    line = input('Enter line: ')
+    #line2 = line.lower()
+
+    if 'bear' in line:
+        print("There's a bear in there.")
+    elif 'Bear' in line:
+        print("There's a bear in there.")
+    else:
+        print('No bears here.')
         
-    
     # End of your code here
 
 

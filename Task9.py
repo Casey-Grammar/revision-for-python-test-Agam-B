@@ -5,10 +5,10 @@
 
 def main():
     #Write your code here
-    
-
-
-
+    cats = input('Cats: ')
+    names = cats.split()
+    amount = len(names)
+    print(f'You have {amount} cats.')
     # End of your code here
 
 

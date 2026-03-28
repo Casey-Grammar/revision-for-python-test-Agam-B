@@ -15,9 +15,20 @@
 
 def main():
     #Write your code here
+    fir = []
+    las = []
+    names = input('First and Last Name? ')
+    parts = names.split()
+    first = parts[0]
+    last = parts[1]
     
 
-
+    for letter in first:
+        fir.append(letter)
+    for letters in last:
+        las.append(letters)
+    name = fir[0] + fir[1] + las[-4] + las[-3] + las[-2] + las[-1]
+    print(f'Your call sign is: {name}')
     # End of your code here
 
 
